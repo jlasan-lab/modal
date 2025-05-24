@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>modal5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      section{
+        padding: 60px 0;
+      }
+
+      .modal-btn {
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section style="background-color: antiquewhite;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="text-center">
+            <h1 class="display">Vertically centered</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum id deleniti velit ipsam voluptatem? Aperiam cumque reprehenderit tenetur, tempora natus ea ad voluptate. Placeat suscipit earum ratione consectetur! Iusto, tempora!</p>
+          </div>
+
+          <!--modal launch button-->
+          <div class="justify-content-center text-center  ">
+            <button class="btn btn-primary modal-btn " tabindex="-1" data-bs-toggle="modal" data-bs-target="#myModal">Launch static scrollable modal</button>
+            <button class="btn btn-primary modal-btn" data-bs-toggle="modal" data-bs-target="#myModal">Launch static scrollable modal</button>
+          </div>
+          <!--modal itself-->
+          <div class="modal fade" id="myModal" aria-labelledby="modalModal" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p class="display-5">This is the title of scrollable modal</p>
+                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="button"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima totam soluta quisquam accusantium praesentium autem molestiae ut amet earum optio, corporis eveniet nostrum modi animi exercitationem ea labore quas, repellendus deserunt eos est pariatur neque dolorum. In dolorum est rem aspernatur laudantium! Tempora laboriosam deserunt, quis unde corporis incidunt modi praesentium eius doloremque fugit aperiam accusantium ipsa, at aliquam cum quae nobis vero odit id laudantium! Dolorem fuga consectetur voluptas deleniti, quia non temporibus animi velit ipsa, maxime tempore tempora dicta ab, est quidem! Voluptate deserunt porro cumque corrupti, molestiae aperiam vitae quaerat perspiciatis quisquam magnam maxime, libero illo fugit alias laudantium eius voluptates, beatae aliquid maiores tenetur nihil quis animi? Numquam modi eum pariatur expedita impedit quaerat possimus nam odit inventore maxime quae cupiditate eius ea dignissimos temporibus ratione distinctio enim, ipsum, exercitationem, voluptatibus vitae earum commodi provident! Eveniet in laudantium aperiam earum tenetur. Est magnam debitis neque corrupti adipisci obcaecati voluptas ipsa temporibus deleniti nobis? Exercitationem saepe voluptate labore magnam id quisquam deleniti, facere illo voluptates incidunt quos consequatur ad qui numquam earum unde voluptatum, natus suscipit architecto possimus minus? Nesciunt error aliquam molestiae obcaecati atque laudantium placeat, dolore, labore minus itaque sed perferendis iste quas inventore dolores. Fugiat sint ullam distinctio exercitationem consequatur vero dolorem laboriosam impedit rerum deleniti dicta mollitia explicabo voluptate odio non corporis reprehenderit, alias est inventore assumenda incidunt provident minus? Accusantium commodi dolorum reiciendis laborum, minima pariatur. Ex autem, repellendus facilis, est quis maiores cupiditate blanditiis alias vel iste quas. Magnam quidem, iste nemo debitis laudantium dolorem obcaecati? Quis cupiditate provident quibusdam vel sed quasi est quos iste! Accusantium ipsa officiis iusto nisi impedit dolorum veritatis! Et iusto animi dignissimos voluptate quae voluptatum aspernatur dolorum blanditiis ullam, rerum non obcaecati at aperiam? Voluptates, at magnam? Alias pariatur ipsam officiis aperiam facilis dolores ea hic tempore, voluptates cum, rem perferendis distinctio consequuntur aspernatur beatae delectus. Vel deleniti veniam error molestiae nemo aperiam nesciunt incidunt repellendus. Error doloribus, nostrum, repellat ea veniam ipsa adipisci alias dolorem dolor officiis repudiandae debitis nulla commodi autem odio ullam ducimus sapiente? Quae quasi consequuntur laudantium facere, porro distinctio, consequatur adipisci nemo est suscipit dolorum at omnis numquam ratione itaque blanditiis unde. Maxime, doloribus eligendi. Nam sint corrupti dolore culpa iure obcaecati voluptates iste, suscipit tempora animi, quasi libero excepturi optio quia facere facilis corporis! Exercitationem ex quia quas ut beatae laborum aut maiores eligendi consectetur numquam quo nesciunt voluptatem vero mollitia, provident saepe sunt harum atque aspernatur soluta quae consequatur molestias ratione. Iusto maxime saepe nihil pariatur tempore rem possimus corporis, consequuntur ipsa, autem voluptate voluptates ut aperiam laboriosam eligendi modi repellendus ad fugiat facilis nemo dolores quisquam, iure asperiores! Perspiciatis aspernatur facilis sint itaque voluptatibus, modi qui ipsam debitis sequi illo enim quod consequatur fugit doloribus dolor ratione, at quas quidem? Nihil ut libero iste facere nulla harum ad aut molestiae ratione culpa id sit ipsa commodi nisi amet provident mollitia nemo, ducimus modi quo eos nostrum et! Id nisi fugit illum sed enim? Quisquam molestiae asperiores cupiditate.</p>
+
+                  <div class="form-floating">
+                    <input type="email" id="email" class="form-control">
+                    <label for="email" class="form-label">Email address</label>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--/modal fade-->
+        </div><!--row-->
+      </div><!--/container-->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
