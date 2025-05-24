@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>modal4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      section{
+        padding: 60px 0;
+      }
+    </style>
+  </head>
+  <body>
+   <section class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="display-5">Stay in the loop </h2>
+        <p class="lead">Get the latest updates...</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, ratione porro maxime blanditiis omnis cum commodi officiis dignissimos deserunt deleniti?</p>       
+          <!--modal trigger button-->
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#email-modal">Register for updates</button>
+          </div>
+        </div><!--row-->
+    </div>
+   </section>
+
+   <!--modal itself-->
+   <div class="modal fade" id="email-modal" tabindex="-1" aria-labelledby="mymodal" aria-hidden="true"  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Ge the latest updates...</h3>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A delectus aperiam corrupti excepturi reprehenderit dolor pariatur maxime perspiciatis sunt quae cum tempora voluptatibus suscipit, iste soluta porro provident fugiat dolorem. Quis veritatis necessitatibus adipisci, enim vero reiciendis, omnis officiis amet, beatae ipsum deleniti autem repellat sapiente qui. Enim, suscipit praesentium.</p>
+
+          <!--email input form box-->
+          <div class="form-floating">
+            <input type="email" id="email" class="form-control">
+            <label for="email" class="form-label">Email address</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!--Modal with static backdrop-->
+   <section style="background-color: antiquewhite;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <h1 class="display-5">Static backdrop</h1>
+          <p class="lead">Static backdrop won't close when click on the backdrop page area. Even escape key won't work. </p>
+        </div>
+        <!--modal trigger button-->
+        <div class="text-center">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Launch static backdrop modal</button>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!--modal itself-->
+   <div class="modal fade" id="staticBackdrop" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="email-field" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="email-field">Get the latest updates...</h3>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, voluptates.</p>
+
+          <!--email input box-->
+          <div class="form-floating">
+            <input type="email" id="email" class="form-control">
+            <label for="email" class="form-label">Email address</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+
+
+<!--static backdrop practice-->
+   <section class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <p class="display-5">Static backdrop practice</p>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, fuga distinctio? Inventore pariatur laborum labore cupiditate eum distinctio provident fugit.</p>
+        <!--modal launch button-->
+        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticModal">Launch static backdrop modal</button>
+      </div>
+    </div>
+   </section>
+
+   <!--modal itself-->
+   <div class="modal fade" id="staticModal" tabindex="-1" aria-labelledby="exampleStaticModal" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleStaticModal">Test modal with static backdrop</h3>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident nostrum doloremque doloribus numquam tenetur itaque! Sint, maiores adipisci, asperiores consectetur reiciendis obcaecati ab hic ratione in facere vel eaque.</p>
+          <!--email input form box-->
+          <div class="form-floating">
+            <input type="email" id="email" class="form-control">
+            <label for="email" class="form-label">Email address</label>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+   
+
+
+
+  <section style="background-color: antiquewhite;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class=" col-md-8 text-center">
+          <p class="display-5">Scrollable modal</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero recusandae dolorum enim sequi odio iusto, sit fuga quisquam amet et nihil expedita natus cupiditate, laborum tenetur, earum aperiam porro ipsa!</p>
+        <!--modal trigger button-->
+        <button class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#myModal" >Launch hstatic backdrop modal 2</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--modal itself-->
+  <div class="modal fade"  id="myModal" aria-labelledby="modalModal" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalModal">This is modal title</h3>
+          <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eius, deserunt sit cupiditate optio distinctio magni enim itaque ipsa delectus, similique ad, id nam nulla ratione doloribus! Suscipit iure ullam deserunt at quae, eligendi cumque quasi expedita nemo velit possimus cupiditate molestias quas, quia incidunt ipsam quaerat temporibus, enim neque placeat rem omnis veniam? Ut beatae blanditiis aliquid quo deserunt officiis excepturi tenetur ipsum quasi vel neque expedita aut, magni eius quibusdam at, quod quidem aliquam. Quaerat mollitia iure explicabo ullam commodi laudantium sed, eos iste voluptatem id officia unde, saepe sequi ipsa nisi reiciendis, quos deleniti fugiat laborum ea magnam. Qui labore nam nobis nihil dolorum ipsum facilis minus porro enim quos nemo dicta illo eum quod iure voluptate animi sapiente soluta voluptatem eos fugit expedita, corrupti in. In voluptates quam placeat, porro cumque saepe assumenda facere incidunt nam. A, consequuntur laudantium! Totam illo assumenda mollitia ipsam modi eum fugit, cumque voluptates cupiditate! Voluptate incidunt, quibusdam amet vel, tenetur molestiae commodi odit veniam ea voluptates necessitatibus nostrum quia laboriosam inventore magnam modi assumenda temporibus. Magnam, veritatis amet. Ipsum, labore explicabo repellat numquam impedit provident facere amet asperiores dicta cumque eveniet pariatur deserunt laboriosam adipisci quae, voluptate a. Placeat harum excepturi tempore doloremque cupiditate aut. Nihil nostrum distinctio in rem non! Temporibus tenetur hic minima, molestiae at, dolorem recusandae nulla repudiandae non est deleniti. Est reiciendis magni quod? Illum voluptas veritatis quis, ad deleniti fugit nam id a blanditiis, quisquam accusantium numquam quasi odit, aperiam molestiae. Culpa voluptas vitae delectus commodi sit excepturi et quidem blanditiis eligendi. Perspiciatis id cum quisquam enim. Quasi voluptatum animi inventore odit quas pariatur, sunt nisi! Odit cumque magni repellendus debitis vero, inventore, illo mollitia commodi voluptate quia voluptatibus architecto. Sit voluptas similique commodi, possimus deserunt quod repellat repudiandae accusantium excepturi iure atque magnam soluta nostrum. Accusamus sequi placeat quia, nam soluta atque! Illum ducimus sapiente numquam dolorem, deleniti praesentium quas qui beatae similique saepe possimus iusto laborum laboriosam ea officia quo illo maiores, officiis, itaque reprehenderit temporibus dolor animi nulla. Recusandae perspiciatis quae libero excepturi dolore esse quo nostrum iure officiis porro maiores neque distinctio voluptate ad dolor illo, expedita quis eligendi beatae repellendus blanditiis, voluptatibus vero quod! Tempore quos autem quibusdam sed. Accusantium aliquid blanditiis, corporis laborum odio excepturi unde quam dolorum facilis ducimus, doloribus non quos, assumenda officiis? Totam mollitia reiciendis vel, ab molestiae hic distinctio commodi ipsam blanditiis voluptatem qui, quibusdam accusantium eveniet nulla deserunt, quo corporis? Voluptatum nihil vitae sunt tenetur, autem ullam non culpa quasi et dolorem nam at aliquam commodi maxime in rerum. Dolor blanditiis modi vitae quo voluptatem aperiam ullam. Mollitia enim officia dolores perferendis sunt, fugit omnis neque illum et sed molestiae maiores iste corporis cum voluptas excepturi praesentium saepe quas. Doloremque nam autem nostrum vel maiores rem, eum veritatis delectus hic qui deserunt explicabo et ullam quae sed natus, tenetur illo reiciendis veniam minima laborum quos voluptatibus a? Quidem molestias nemo tempore in placeat, esse totam sed aut? Suscipit doloribus ipsa, unde commodi odio accusamus?</p>
+          <div class="form-floating">
+            <input type="email" id="email" class="form-control">
+            <label for="email" class="form-label">Email address</label>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
